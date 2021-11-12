@@ -30,10 +30,10 @@ pipeline {
             }
         }
         stage('Cleanup') {
-		    steps {
-                sh 'sudo rm -rf /home/ec2-user/jenkins-data/jenkins_home/workspace/vorx-backend-app-pipeline*'
-			    sh './jenkins/build/mvn.sh mvn clean'
-			    deleteDir()
+	    steps {
+                sh 'rm -rf /home/ec2-user/jenkins-data/jenkins_home/workspace/vorx-backend-app-pipeline*'
+		sh './jenkins/build/mvn.sh mvn clean'
+		deleteDir()
             }
 	}
     }
