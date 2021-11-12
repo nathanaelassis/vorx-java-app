@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "***************************"
-echo "** Building jar ***********"
+echo "*** Building jar **********"
 echo "***************************"
 
 WORKSPACE=/home/ec2-user/jenkins-data/jenkins_home/workspace/vorx-backend-app-pipeline
